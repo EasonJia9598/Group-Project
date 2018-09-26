@@ -20,8 +20,11 @@
 
 <body class="text-center">
 <form class="form-signin">
-    <img class="mb-4" src="../image/bootstrap-solid.svg" alt="" width="72"
-         height="72">
+    <!--<img class="mb-4" src="../image/bootstrap-solid.svg" alt="" width="72"-->
+         <!--height="72">-->
+    <br>
+    <canvas id="glcanvas" width="305" height="204"></canvas>
+
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <label for="inputEmail" class="sr-only">Email address</label>
     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
@@ -36,4 +39,6 @@
     <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
 </form>
 </body>
+    <script src="../webGL/js/gl-matrix.js"></script>
+    <script src="../webGL/js/webgl-demo.js"></script>
 </html>
