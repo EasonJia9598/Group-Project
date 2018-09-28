@@ -4,46 +4,37 @@
 	<title>Desktop Login Form</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" href="../css/signin.css">
-	<!-- Having trouble linking the css, so re-added them -Emily-->
-
 </head>
-<!-- Load an icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <body>
 <section class="container-fluid">
-	<!-- use bootstrap class ! justify-content-center to bring the form in the center of the page-->
+	<!-- use bootstrap class justify-content-center to bring the form in the center of the page-->
 	<section class="row justify-content-center">
-		<!-- create the bootsrap grid system for tablets (sm) and desktops (md) layouts.-->
-
-		<!-- Nav Bar added by Emily -->
-		<!-- Add icons to bar -->
-		<div class="navbar">
-			<a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-			<a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-			<a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-			<a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-		</div>
-
+		<!-- create the bootstrap grid system for tablets (sm) and desktops (md) layouts.-->
 		<section class="col-12 col-sm-6 col-md-3">
 			<!--Add the login icon at the top of the form-->
-			<img src="../img/icon2.png" class="icon">
-			<!--using bootsrap-->
+			<img src="../img/destop_login/icon5.png" class="icon">
+			<!--using bootstrap-->
 			<form class="form-container">
 				<!-- use the bootstrap class text-center and font-weight-bold to center the text on the form-->
 				<h4 class="text-center font-weight-bold text-color">Sign In Your Account</h4>
 				<div class="form-group">
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+					<i class="fa fa-user icon"></i>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+						   placeholder="Username" required>
                 </div>
                 <div class="form-group">
-                	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
                 </div>
                 <div class="form-group form-check">
                 	<input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block btn-color">LOGIN</button>
+				<div class="form-group">
+					<a href="#">Forgot Password?</a><br>
+				</div>
+				<h6 class="text-color">Don't have an account?</h6>
+				<button type="submit" class="btn btn-primary btn-block btn-color">REGISTER</button>
             </form>
 		</section>
 	</section>
