@@ -24,7 +24,7 @@
       2. Can start again.
       3. Can focus on concentration mode.
       4. Still Linear equation.
-      5. Already figure out formual of changeing time, zoom in/out. And already encapsulation changing funcions.
+      5. Already figure out the formual of changeing time, zoom in/out. And already encapsulation changing funcions.
       6. Add background music:
             1. concentration music
             2. inhale music
