@@ -2,23 +2,24 @@
 
 
 ## 1. Welcome page finish. 
-      ### group_A add brief.
+   ### group_A add brief.
       
       
-      ### 3D animation:
+   ### 3D animation:
       1. Two init and render failed. Converting video type mov to webM and start autoplay each time.
       2. Second init success, perspective will be dynamically changing by mouse position.
       3. Background music added.
       4. Encapsulation of changing Model funcion need to be done at next release.
       
 ## 2. Server connecting done.
-      group_C add brief.
+   ### group_C add brief.
       
       
 ## 3. Deep breath unfinish.
-      #group_B add brief.
+   ### group_B add brief.
       
-     #3D animation:
+   
+   ### 3D animation:
       1. Now, deep breath could change duration time.
       2. Can start again.
       3. Can focus on concentration mode.
@@ -37,8 +38,8 @@
               camera.position.y = 300;
               camera.position.z = 900;
       11.Add nav bar.
-##4. Flying house:
-     #3D animation:
+## 4. Flying house:
+   ### 3D animation:
       1. Add two camera into one scene.
          a. One look at background picture.
          b. One look at object.
