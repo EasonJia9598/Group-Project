@@ -1,0 +1,10 @@
+
+
+
+
+
+
+function  allStart() {
+    start();
+    threeStart();
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards</title>
+    <link rel="stylesheet" href="../css/cards.css">
+    <!--<script src="../js/three.js"></script>-->
+    <!--<script src="../js/Stats.js"></script>-->
+    <script src="../three.js-dev/build/three.min.js"></script>
+    <!--<script src="../js/loaders/OBJLoader.js"></script>-->
+    <!--<script src ="../js/heartFront.js"></script>-->
+    <script src ="../js/house.js"></script>
+    <script src="../three.js-dev/build/three.js"></script>
+
+    <script src="../three.js-dev/examples/js/loaders/DDSLoader.js"></script>
+    <script src="../three.js-dev/examples/js/loaders/MTLLoader.js"></script>
+    <script src="../three.js-dev/examples/js/loaders/OBJLoader.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+</head>
+
+<!-- Load an icon library -->
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+
+<body onload="start();" >
+
+<header>
+    <div class="nav">
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="RegPage.html">Login</a></li>
+    </ul>
+    </div>
+</header>
+
+<!-- Nav Bar added by Emily -->
+<!-- Add icons to bar -->
+<!--<div class="navbar">
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+-->
+<div class="msg">
+    <h1>Welcome To HELLEN</h1>
+</div>
+
+<!-- <p>Resize the browser window to see the effect.</p> */ -->
+
+<div class="row">
+
+    <div class="column" onclick="window.location='heartMain.html';">
+        <div class="card" id = 'card1' >
+            <video autoplay loop muted width="600" height="300">
+                <source type="video/webm" src="../webM/heart.webm">
+            </video>
+        </div>
+    </div>
+
+    <div class="column" >
+        <div class="card" id='card2' onclick="window.location='stableBackground.html';">
+            <!--<h3>Register</h3>-->
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card" id='card3'>
+            <h3>Flip Game</h3>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card" id='card4' >
+            <h3>Food</h3>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <div class="card" id='card5'>
+            <h3>Deep Breath</h3>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card" id='card6'>
+            <h3>Option 1</h3>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card" id='card7'>
+            <h3>Option 2</h3>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card" id='card8'>
+            <h3>Option 3</h3>
+        </div>
+    </div>
+</div>
+
+<audio controls autoplay hidden id="music" >
+    <source src="../sounds/Bonaparte's_Retreat.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+</body>
+</html>

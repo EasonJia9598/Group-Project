@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 移动相机的位置-->
+		<meta charset="UTF-8">
+		<title>Deep Breath</title>
+		<script src="../js/three.js"></script>
+        <script src="../js/Stats.js"></script>
+		<script src="../js/tween.min.js"></script>
+        <script src="../js/loaders/OBJLoader.js"></script>
+        <script src ="../js/heart.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Signin Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="../css/signin.css" rel="stylesheet">
+
+		<style type="text/css">
+			div#canvas-frame {
+				border: none;
+				cursor: pointer;
+                width: 800px;
+                height: 800px;
+				background-color: #EEEEEE;
+			}
+            #video{
+                position: fixed;
+                left:0;
+                bottom:0;
+            }
+            .nav{
+                background: linear-gradient(132deg, #F09459, #e66586);
+                /*background:rgba(0,0,0,0.1);*/
+                height:80px;
+                top:0;
+                position:absolute;
+                width:100%;
+            }
+
+
+            .menu{
+                float:right;
+                list-style:none;
+                margin:20px;
+            }
+
+            .menu li{
+                display: inline-block;
+                margin:10px 5px;
+            }
+
+            .menu li a{
+                text-decoration: none;
+                color:#fff;
+                padding: 5px 10px;
+                font-family:sans-serif;
+                letter-spacing:2px;
+                border-bottom:1px solid #fff;
+            }
+
+            .menu li a:hover{
+                background:coral;
+                border-bottom:1px solid coral;
+                transition: .4s;
+            }
+
+
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+	</head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <body onload="threeStart();">
+    <header>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="welcomePage.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="RegPage.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+        <form class="form-signin">
+            <!--<img class="mb-4" src="../image/bootstrap-solid.svg" alt="" width="72"-->
+            <!--height="72">-->
+            <div id="canvas-frame" ></div>
+
+            <div class="col-md-8 mb-3">
+                <!--<label for="times" >Time</label>-->
+                <!--<select class="custom-select d-block w-100" id="times" required onchange="select_change()">-->
+                    <!--<option value="1" selected="selected">1 minutes...</option>-->
+                    <!--<option value="2">2 minutes </option>-->
+                    <!--<option value="3">3 minutes</option>-->
+                <!--</select>-->
+                <!--<label for="times" >Time</label>-->
+
+                <select class=" custom-select custom-select-lg mb-3 " id="times" required onchange="select_change()">
+                    <option selected value="1">1 minutes...</option>
+                    <option value="2">2 minutes </option>
+                    <option value="3">3 minutes</option>
+                </select>
+            </div>
+            <p class="btn btn-lg btn-primary btn-block"  onclick="motion_change_small_middle()">Concentrate</p>
+            <p class="btn btn-lg btn-primary btn-block" onclick="motion_change_small_large()">Start Deep Breath</p>
+            <p class="btn btn-lg btn-primary btn-block" onclick="start_again()">Start again</p>
+
+
+            <p class="mt-5 mb-3 text-muted text-center">&copy; 2018 copyright GeniusHub </p>
+        </form>
+        <audio controls hidden id="audio">
+            <source src="../sounds/10525.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls hidden id="audio2">
+            <source src="../sounds/wave.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls hidden id="audio3">
+            <source src="../sounds/10648.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </body>
+</html>
