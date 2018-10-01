@@ -1,0 +1,94 @@
+.button{
+    background-color: skyblue;
+    
+    border: none;
+    color: black;
+    padding: 14px 40px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 70%;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+/*.button span{
+    display:none;
+}
+.button:after{
+    content: 'inhale';
+}*/
+    
+    /* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    50%   {background-color: deepskyblue;content: "Changed Text1"}
+    100%  {background-color: skyblue;content: "Changed Text2"}
+}
+
+/* Standard syntax */
+@keyframes example {
+    50%   {background-color: blue; content: "Changed Text1"}
+    100%  {background-color: skyblue; content: "Changed Text2"}
+}
+
+
+
+
+
+.popEffect{
+	display: run-in;
+	text-indent: 10px;
+        align-content: center;
+}
+.popEffect span{
+	animation: pop 6s linear infinite 0s;
+	-ms-animation: pop 6s linear infinite 0s;
+	-webkit-animation: pop 6s linear infinite 0s;
+	color:black;
+	opacity: 0;
+	overflow: hidden;
+	position: relative;
+}
+.popEffect span:nth-child(2){
+	animation-delay: 3.5s;
+	-ms-animation-delay: 3.5s;
+	-webkit-animation-delay: 3.5s;
+}
+
+/*Pop Effect Animation*/
+@-moz-keyframes pop{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: rotate(0deg) scale(0.10) skew(0deg) translate(0px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0;}
+}
+@-webkit-keyframes pop{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: rotate(0deg) scale(0.10) skew(0deg) translate(0px);}
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes pop{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: rotate(0deg) scale(0.10) skew(0deg) translate(0px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
