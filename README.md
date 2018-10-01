@@ -2,7 +2,8 @@
 
 
 ## 1. Welcome page finish. 
-   ### group_A add brief.
+      1. Images need to be added to each and properly alined.
+      2. The text on the back side of card needs to adjusted.
       
       
    ### 3D animation:
