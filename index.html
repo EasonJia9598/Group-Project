@@ -31,54 +31,18 @@ and open the template in the editor.
 <script src="RGraph.common.dynamic.js"></script>
 <script src="RGraph.common.tooltips.js"></script>
 <script src="RGraph.pie.js"></script>
-
+<script src="changeValue.js"></script>
     </head>
     <body>
         <center>
         <h1>Thank you for feedback</h1>
          
-        <canvas id="cvs" width="600" height="250">
+        <canvas id="cvs" width="650" height="450">
     [No canvas support]
 </canvas>
-        <a data-role="button" onclick="">Go Home</a>
+        <a data-role="button" onclick="changedata()">Reset</a>
         </center>
-     <script>
-    window.onload = function ()
-    {
-        var data     = [20,13.43,2.83,4.24,7.42,13.43,38.65];
-        var labels   = ['pizza','poutine','french fries','steak','broccoli','salad','tea'];
-        
-        for (var i=0; i<data.length; ++i) {
-            labels[i] = labels[i] + ', ' + data[i] + '%';
-        }
-
-        var pie = new RGraph.Pie({
-            id: 'cvs',
-            data: data,
-            options: {
-                labels: labels,
-                labelsSticksList: true,
-                tooltips: labels,
-                colors: ['#EC0033','#A0D300','#FFCD00','#00B869','#999999','#FF7300','#004CB0'],
-                strokestyle: 'white',
-                linewidth: 0,
-                shadowOffsetx: 2,
-                shadowOffsety: 2,
-                shadowBlur: 3,
-                exploded: 7,
-                textAccessible: true
-            }
-        }).draw();
-    };
-</script>
-
-
-
-
-
-
-
-
-    </body>
+   
+ </body>
    
 </html>
