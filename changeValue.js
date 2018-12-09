@@ -1,11 +1,17 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/* global RGraph, cvs */
-
-
+/*
+* Created and tested by Md. Riad Arifin of GeniusHub Group
+* Story 
+* As a developer, I want to write a code which will help to redraw the pie chart when new data is entered or existing data is altered.
+* Created by Md. Riad Arifin: Index# 36
+* Complexity # 5
+* Individual Credit: Md. Riad Arifin created, wrote and tested the source code.
+* Pseudocode/Tasks
+* 1.	Create a javascript file.
+* 2.	Transfer the javascript code in HTML which draws the pie chart to this new script file
+* 3.	Make a new function which will redraw the graph with its new data
+* Individual Credit: Given/When/Then
+* When new data about the preferences of the food is entered into the app by the residents it will combine with the old data and redraw the pie chart to show the new percentage of people liking certain foods.
+*/
 
 window.onload = function drawGraph()
     {
